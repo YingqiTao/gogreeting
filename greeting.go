@@ -9,9 +9,7 @@ type Greeter interface {
 	Hello(name string) (string, error)
 }
 
-type MyGreeter struct {
-	Name string
-}
+type MyGreeter struct{}
 
 func (g MyGreeter) Hello(name string) (string, error) {
 	if name == "" {
